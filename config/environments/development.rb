@@ -36,6 +36,12 @@ Rails.application.configure do
   # Raises helpful error messages.
   config.assets.raise_runtime_errors = true
 
+#
+  Braintree::Configuration.environment = :sandbox
+Braintree::Configuration.merchant_id = "use_your_merchant_id"
+Braintree::Configuration.public_key = "use_your_public_key"
+Braintree::Configuration.private_key = "use_your_private_key"
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
