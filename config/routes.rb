@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :transactions, only: [:new, :create]
   resources :products
   resources :moviesttts
   resources :movies

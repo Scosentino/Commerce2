@@ -1,0 +1,11 @@
+Monday- 8/24
+Should we build the purchase join model? (http://www.sitepoint.com/integrate-braintree-payments-rails/)??
+
+Should we do the initial tutorial using redis (which I've tried and failed miserably several times)?
+    - http://www.sitepoint.com/build-online-store-rails/
+    - It would help to follow this current tutorial, but complications with redis/hiredis were frustrating so I switched.
+
+BUT AS OF TODAY, IT WORKS UNTIL YOU GET TO PURCHASE_CART !!! AUTHENTICITY TOKEN GET MADE, GON AND FIGARO WORK, JS CART STILL WORKS,  good.
+---------------------------------------------------------------------------------------------------------
+
+

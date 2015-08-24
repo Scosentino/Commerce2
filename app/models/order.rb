@@ -7,6 +7,13 @@ belongs_to :order_status
   def subtotal
     order_items.collect { |oi| oi.valid? ? (oi.quantity * oi.unit_price) : 0 }.sum
   end
+
+  def purchase_cart #undefined method `purchase_cart' for nil:NilClass
+    current_order.order_items.each { |m| purchase(m) }
+    # $redis.del "cart#{id}"
+  end
+
+
 private
   def set_order_status
     self.order_status_id = 1
